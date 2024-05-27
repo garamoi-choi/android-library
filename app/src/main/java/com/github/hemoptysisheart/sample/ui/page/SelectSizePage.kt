@@ -87,7 +87,7 @@ private fun SelectSizePageContent(
                 modifier = Modifier.weight(1F),
                 textStyle = LocalTextStyle.current.copy(textAlign = TextAlign.Center),
                 placeholder = {
-                    Text(text = "가로", modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.Center)
+                    Text(text = "Width", modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.Center)
                 }
             )
             Text(text = "x", modifier = Modifier.padding(10.dp, 0.dp))
@@ -96,7 +96,7 @@ private fun SelectSizePageContent(
                 modifier = Modifier.weight(1F),
                 textStyle = LocalTextStyle.current.copy(textAlign = TextAlign.Center),
                 placeholder = {
-                    Text(text = "세로", modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.Center)
+                    Text(text = "Height", modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.Center)
                 }
             )
         }
@@ -109,11 +109,11 @@ private fun SelectSizePageContent(
                 }
             }
         ) {
-            Text(text = "미로 만들기", modifier = Modifier.padding(10.dp), fontWeight = Bold)
+            Text(text = "Generate Maze", modifier = Modifier.padding(10.dp), fontWeight = Bold)
         }
         Spacer(modifier = Modifier.height(30.dp))
         Button(modifier = Modifier.widthIn(200.dp), onClick = onClickDefault) {
-            Text(text = "기본값", modifier = Modifier.padding(10.dp))
+            Text(text = "Default Size", modifier = Modifier.padding(10.dp))
         }
     }
 }
